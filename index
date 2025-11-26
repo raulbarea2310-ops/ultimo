@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes del PC - Comparativa</title>
+    <style>
+        body {
+            background-color: #0a0f1f;
+            font-family: Arial, sans-serif;
+            color: #cfe6ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(90deg, #003b7a, #0066cc);
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #78baff;
+            border-left: 5px solid #1a6eff;
+            padding-left: 10px;
+        }
+
+        .componente {
+            background: #111b33;
+            border: 2px solid #1a4fa3;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 15px #053d88;
+        }
+
+        .imagenes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .imagenes img {
+            width: 250px;
+            border-radius: 12px;
+            border: 2px solid #1a6eff;
+        }
+
+        .tabla {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: #0f172e;
+            color: #d6e4ff;
+        }
+
+        .tabla th, .tabla td {
+            border: 1px solid #1a3b80;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tabla th {
+            background: #004a9f;
+        }
+    </style>
+</head>
+<body>
+
+<header>Componentes del PC - Comparaciones</header>
+
+<div class="container">
+
+    <!-- PLACA BASE -->
+    <div class="componente">
+        <h2>Placa Base</h2>
+        <div class="imagenes">
+            <img src="placa1.png" alt="Placa Base 1">
+            <img src="placa2.png" alt="Placa Base 2">
+        </div>
+
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Formato</td><td>ATX</td><td>Micro ATX</td></tr>
+            <tr><td>Socket</td><td>AM4</td><td>AM5</td></tr>
+            <tr><td>RAM Máxima</td><td>64 GB</td><td>128 GB</td></tr>
+        </table>
+    </div>
+
+    <!-- PROCESADOR -->
+    <div class="componente">
+        <h2>Procesador</h2>
+        <div class="imagenes">
+            <img src="cooler1.png" alt="CPU 1">
+            <img src="cooler2.png" alt="CPU 2">
+        </div>
+
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Núcleos</td><td>6</td><td>8</td></tr>
+            <tr><td>Frecuencia</td><td>3.6 GHz</td><td>4.2 GHz</td></tr>
+            <tr><td>Consumo</td><td>65W</td><td>105W</td></tr>
+        </table>
+    </div>
+
+    <!-- TARJETA GRÁFICA -->
+    <div class="componente">
+        <h2>Tarjeta Gráfica</h2>
+        <div class="imagenes">
+            <img src="grafica1.png" alt="GPU 1">
+            <img src="grafica2.png" alt="GPU 2">
+        </div>
+
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>VRAM</td><td>6 GB</td><td>8 GB</td></tr>
+            <tr><td>Frecuencia</td><td>1500 MHz</td><td>1700 MHz</td></tr>
+            <tr><td>Consumo</td><td>120W</td><td>180W</td></tr>
+        </table>
+    </div>
+
+    <!-- RAM -->
+    <div class="componente">
+        <h2>Memoria RAM</h2>
+        <div class="imagenes">
+            <img src="ram1.png" alt="RAM 1">
+            <img src="ram2.png" alt="RAM 2">
+        </div>
+
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Capacidad</td><td>8 GB</td><td>16 GB</td></tr>
+            <tr><td>Tipo</td><td>DDR4</td><td>DDR5</td></tr>
+            <tr><td>Velocidad</td><td>2666 MHz</td><td>5600 MHz</td></tr>
+        </table>
+    </div>
+
+    <!-- SSD -->
+    <div class="componente">
+        <h2>Almacenamiento SSD</h2>
+        <div class="imagenes">
+            <img src="ssd1.png" alt="SSD 1">
+            <img src="ssd2.png" alt="SSD 2">
+        </div>
+
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Capacidad</td><td>500 GB</td><td>1 TB</td></tr>
+            <tr><td>Tipo</td><td>SATA</td><td>NVMe</td></tr>
+            <tr><td>Velocidad</td><td>550 MB/s</td><td>3000 MB/s</td></tr>
+        </table>
+    </div>
+
+    <!-- FUENTE -->
+    <div class="componente">
+        <h2>Fuente de Alimentación</h2>
+        <div class="imagenes">
+            <img src="fuente1.png" alt="Fuente 1">
+            <img src="fuente2.png" alt="Fuente 2">
+        </div>
+
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Potencia</td><td>550W</td><td>750W</td></tr>
+            <tr><td>Certificación</td><td>80 Plus Bronze</td><td>80 Plus Gold</td></tr>
+            <tr><td>Modular</td><td>No</td><td>Sí</td></tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
