@@ -25,6 +25,7 @@
 
         .container {
             width: 90%;
+            max-width: 1200px;
             margin: auto;
             padding: 20px 0;
         }
@@ -49,17 +50,20 @@
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 20px;
         }
 
         .imagenes img {
-            width: 250px;
+            width: 100%;
+            max-width: 250px;
+            height: auto;
             border-radius: 12px;
             border: 2px solid #1a6eff;
         }
 
         .tabla {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 10px;
             border-collapse: collapse;
             background: #0f172e;
             color: #d6e4ff;
@@ -74,11 +78,33 @@
         .tabla th {
             background: #004a9f;
         }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                font-size: 24px;
+                padding: 20px;
+            }
+
+            .imagenes img {
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .imagenes img {
+                max-width: 90%;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
 
-<header>Componentes del PC - Comparaciones</header>
+<header>Componentes del PC - Comparativa</header>
 
 <div class="container">
 
@@ -89,7 +115,6 @@
             <img src="placa1.png" alt="Placa Base 1">
             <img src="placa2.png" alt="Placa Base 2">
         </div>
-
         <table class="tabla">
             <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
             <tr><td>Formato</td><td>ATX</td><td>Micro ATX</td></tr>
@@ -105,7 +130,6 @@
             <img src="cooler1.png" alt="CPU 1">
             <img src="cooler2.png" alt="CPU 2">
         </div>
-
         <table class="tabla">
             <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
             <tr><td>Núcleos</td><td>6</td><td>8</td></tr>
@@ -121,7 +145,6 @@
             <img src="grafica1.png" alt="GPU 1">
             <img src="grafica2.png" alt="GPU 2">
         </div>
-
         <table class="tabla">
             <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
             <tr><td>VRAM</td><td>6 GB</td><td>8 GB</td></tr>
@@ -137,7 +160,6 @@
             <img src="ram1.png" alt="RAM 1">
             <img src="ram2.png" alt="RAM 2">
         </div>
-
         <table class="tabla">
             <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
             <tr><td>Capacidad</td><td>8 GB</td><td>16 GB</td></tr>
@@ -153,7 +175,6 @@
             <img src="ssd1.png" alt="SSD 1">
             <img src="ssd2.png" alt="SSD 2">
         </div>
-
         <table class="tabla">
             <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
             <tr><td>Capacidad</td><td>500 GB</td><td>1 TB</td></tr>
@@ -169,7 +190,6 @@
             <img src="fuente1.png" alt="Fuente 1">
             <img src="fuente2.png" alt="Fuente 2">
         </div>
-
         <table class="tabla">
             <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
             <tr><td>Potencia</td><td>550W</td><td>750W</td></tr>
@@ -178,7 +198,36 @@
         </table>
     </div>
 
+    <!-- AUDIO -->
+    <div class="componente">
+        <h2>Tarjeta de Sonido</h2>
+        <div class="imagenes">
+            <img src="audio1.png" alt="Audio 1">
+            <img src="audio2.png" alt="Audio 2">
+        </div>
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Canales</td><td>5.1</td><td>7.1</td></tr>
+            <tr><td>Formato</td><td>PCIe</td><td>USB</td></tr>
+        </table>
+    </div>
+
+    <!-- CAJA -->
+    <div class="componente">
+        <h2>Caja del PC</h2>
+        <div class="imagenes">
+            <img src="caja1.png" alt="Caja 1">
+            <img src="caja2.png" alt="Caja 2">
+        </div>
+        <table class="tabla">
+            <tr><th>Característica</th><th>Modelo 1</th><th>Modelo 2</th></tr>
+            <tr><td>Formato</td><td>ATX</td><td>Micro ATX</td></tr>
+            <tr><td>Ventilación</td><td>Buena</td><td>Excelente</td></tr>
+        </table>
+    </div>
+
 </div>
 
 </body>
 </html>
+
